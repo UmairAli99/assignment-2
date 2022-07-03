@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="~/css/style.css" />
  <div style="height: 40px; display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.192); margin-left: -100px;">
         <span style="font-weight: bold;"> <i class="fa-solid fa-envelope"
-                style="margin-left:120px; font-size: 20px;"></i>&nbsp&nbspumairbaryar99@outlook.com<i
+                style="margin-left:120px; font-size: 20px;"></i>&nbsp&nbspumairbaryar99@outlook.com<i>
                 class="fa-brands fa-whatsapp" style="margin-left:60px"></i>&nbsp&nbsp+92-308-2289-363
         </span>
         <span style="margin-left:400px"><a href="#"><i class="fa-brands fa-facebook-square"
@@ -26,6 +26,28 @@
             
         </span>
     </div>
+    <div>
+        <form method="get" action="/home/Index">
+            <input type="text" name="fname" placeholder="First Name" /><br />
+            <input type="text" name="lname" placeholder="Last Name" /><br />
+            <input type="tel" name="phone" placeholder="Phone number.." /><br />
+            <input type="email" name="mail" placeholder="email..." /><br />
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <br />
+            <label for="dept">Choose a dept:</label>
+
+            <select name="dept" id="dept">
+                <option value="sales">sales</option>
+                <option value="it">IT</option>
+            </select><br />
+            <textarea name="" message" placeholder="Write any message.."></textarea><br />
+            <input type="submit" value="Submit" />
+            <p style="font-size:30px; color:red"> @ViewBag.result</p>
+        </form>
+      
+        
+    </div>\
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img src="images/flying-kick-logo-2-removebg-preview.png" alt="Dell" id="dellimg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
